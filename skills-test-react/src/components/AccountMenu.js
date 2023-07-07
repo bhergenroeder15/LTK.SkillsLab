@@ -11,6 +11,7 @@ import Tooltip from '@mui/material/Tooltip';
 import PersonAdd from '@mui/icons-material/PersonAdd';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
+import { Link } from 'react-router-dom';
 
 export default function AccountMenu({ onClick }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -75,7 +76,7 @@ export default function AccountMenu({ onClick }) {
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
         <MenuItem onClick={onClick}>
-          <Avatar /> Open Form
+          <Link to='/todo'><Avatar /> Open Form</Link>
         </MenuItem>
       </Menu>
     </React.Fragment>
